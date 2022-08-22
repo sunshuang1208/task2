@@ -1,11 +1,12 @@
 package JunitTest;
+
 import com.epam.tat.module4.Calculator;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class MultTest {
+public class CosTest {
     private static Calculator calc;
 
     @BeforeClass
@@ -15,7 +16,8 @@ public class MultTest {
     public static void tearDown(){System.out.println("Test done.");}
 
     @Test
-    public void multiply(){
-        Assert.assertEquals(8,calc.mult(4,2));
+    public void CosTest(){
+        double d = Math.toRadians(0);
+        Assert.assertEquals(1,calc.cos(d),1);
     }
 }

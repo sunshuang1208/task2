@@ -6,11 +6,31 @@
     <test name="Training">
         <groups>
             <run>
-                <include name="bug"/>
+                <include name="cos"/>
             </run>
         </groups>
         <classes>
-            <class name="Testng.BugTest"/>
+            <class name="Testng.CosTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="sin"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.SinTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="tan"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.TgTest"/>
         </classes>
     </test>
     <test name="Training">

@@ -6,19 +6,19 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class BugTest {
+public class SinTest {
     private Calculator calc;
 
-    @BeforeClass(groups = {"bug"})
+    @BeforeClass(groups = {"sin"})
     public  void init(){
         System.out.println("Test started...");
         calc = new Calculator();
     }
 
-    @Test(groups = "bug")
-    public void testCosDouble(){
+    @Test(groups = "sin")
+    public void testSinDouble(){
         double d = Math.toRadians(0);
-        Assert.assertEquals(calc.cos(d),1,"The cosine value of 0 degree is 1");
+        Assert.assertEquals(calc.sin(d),0,"The sin value of 0 degree is 0");
     }
 
     @AfterClass
