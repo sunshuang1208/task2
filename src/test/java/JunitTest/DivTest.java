@@ -6,16 +6,16 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class DivTest {
-    private static Calculator calo;
+    private static Calculator calc;
 
     @BeforeClass
-    public static void init(){calo = new Calculator();}
+    public static void init(){calc = new Calculator();}
 
     @AfterClass
     public static void tearDown(){System.out.println("Test done.");}
 
-    @Test
+    @Test(expected = ArithmeticException.class)
     public void divide(){
-        Assert.assertEquals(2,calo.div(4,2));
+        int result = (int) calc.div(6,0);//除法中，除数为0，抛出ArithmeticException
     }
 }

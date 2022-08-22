@@ -16,8 +16,7 @@ public class MultTest {
     }
 
     @Test(groups = "mult")
-    public void testCosDouble(){
-        double d = Math.toRadians(0);
+    public void testMult(){
         Assert.assertEquals(calc.mult(1,3),3,"The result is 3");
     }
 

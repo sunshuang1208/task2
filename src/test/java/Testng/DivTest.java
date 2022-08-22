@@ -16,9 +16,18 @@ public class DivTest {
     }
 
     @Test(groups = "divide")
-    public void testCosDouble(){
-        double d = Math.toRadians(0);
+    public void testDiv(){
         Assert.assertEquals(calc.div(2,1),2,"The result is 2");
+    }
+    @Test(expectedExceptions = RuntimeException.class)
+    public void testDiv2(){
+        double a = Math.random();
+        double b = Math.random();
+        double c = a/b;
+        if(b == 0){
+            System.out.println("除数为0，异常");
+            throw new RuntimeException();
+        }
     }
 
     @AfterClass

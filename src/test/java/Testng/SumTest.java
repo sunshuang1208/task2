@@ -16,8 +16,7 @@ public class SumTest {
     }
 
     @Test(groups = "sum")
-    public void testCosDouble(){
-        double d = Math.toRadians(0);
+    public void testSum(){
         Assert.assertEquals(calc.sum(1,2),3,"The result is 3 ");
     }
 

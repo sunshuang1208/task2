@@ -16,8 +16,7 @@ public class SubTest {
     }
 
     @Test(groups = "sub")
-    public void testCosDouble(){
-        double d = Math.toRadians(0);
+    public void testSub(){
         Assert.assertEquals(calc.sub(2,1),1,"The result is 1");
     }
 

@@ -7,7 +7,9 @@ import org.junit.runners.Suite;
         PowTest.class,
         SumTest.class,
         DivTest.class,
-        MultTest.class})
+        MultTest.class,
+        TimeoutTest.class
+})
 public class AllTest {
 
 }

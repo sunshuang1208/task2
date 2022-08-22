@@ -1,2 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><suite name="All Test Suite"><test verbose="2" preserve-order="true" name="E:/¹¤×÷epam/task2/TestNG"><classes/></test></suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/ï¿½ï¿½ï¿½ï¿½epam/task2/TestNG"><classes/>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="bug"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.BugTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <parameter name="num1" value="3"></parameter>
+        <parameter name="num2" value="3"></parameter>
+        <parameter name="sum" value="6"></parameter>
+        <classes>
+            <class name="Testng.CalcTestWithParamsNG"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="sum"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.SumTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="sub"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.SubTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="divide"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.DivTest"/>
+        </classes>
+    </test>
+    <test name="Training">
+        <groups>
+            <run>
+                <include name="mult"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Testng.MultTest"/>
+        </classes>
+    </test>
+</suite>
