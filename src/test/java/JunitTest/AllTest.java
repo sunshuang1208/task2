@@ -8,7 +8,11 @@ import org.junit.runners.Suite;
         SumTest.class,
         DivTest.class,
         MultTest.class,
-        TimeoutTest.class
+        TimeoutTest.class,
+        SqrtTest.class,
+        SinTest.class,
+        CosTest.class,
+        TgTest.class
 })
 public class AllTest {
 
